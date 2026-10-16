@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3: The Interaction — Quiz</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Interactive study reviewer</div>
+    <h1>Chapter 3: The Interaction</h1>
+    <p>Multiple-choice quiz based on your PowerPoint. Choose one answer for each question, then check your score and review explanations.</p>
+  </div>
+</header>
+<main>
+  <section class="toolbar" aria-label="Quiz progress">
+    <div style="flex:1;min-width:190px">
+      <strong id="progressText">0 of 40 answered</strong>
+      <div class="progress-shell"><div class="progress" id="progressBar"></div></div>
+      <div class="small" style="margin-top:6px">Your progress updates as you answer.</div>
+    </div>
+    <button class="secondary" id="checkTop">Check answers</button>
+  </section>
+  <div id="quiz"></div>
+  <section class="result" id="result" aria-live="polite">
+    <h2 id="scoreTitle">Your result</h2>
+    <p id="scoreDetail"></p>
+    <p id="feedback" class="small"></p>
+    <div class="actions">
+      <button class="primary" id="retry">Try again</button>
+      <button class="outline" id="showAll">Show explanations</button>
+    </div>
+  </section>
+</main>
+<footer>Study tip: learn the definitions and differences, not just the answer letters.</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
